@@ -1,8 +1,9 @@
+from NameGenerator import name
+
 '''
 Idea of this short code is that based on popular image, user write a name and
-returns his name in "Japanese"
+return his name in "Japanese"
 '''
-from NameGenerator import name
 
 letters = 'abcdefghijklmnoprstuvwyz'
 
@@ -14,16 +15,6 @@ dit_upper = {'A': 'Ka', 'C': 'Mi', 'B': 'Zu', 'E': 'Ku', 'D': 'Te', 'G': 'Ji',
              'f': 'lu', 'i': 'zi', 'h': 'ri', 'k': 'me', 'j': 'zu', 'm': 'rin',
              'l': 'ra', 'o': 'ni', 'n': 'to', 'p': 'no', 's': 'ari', 'r': 'ke',
              'u': 'do', 't': 'chi', 'w': 'mei', 'v': 'ru', 'y': 'na', 'z': 'fu'}
-
-# Beacouse of lazyness I wrote code to write dict faster
-# dite = {}
-# for i in letters.upper():
-#     print "Litera", i
-#     jap_str = raw_input("wpisz: ")
-#     if jap_str == "esc":
-#         break
-#     dite[i] = jap_str
-# print dite
 
 
 def Jap_Generate(czy=0, original_name=''):
@@ -37,3 +28,13 @@ def Jap_Generate(czy=0, original_name=''):
     print 'Stare imie %s, brzmi teraz %s' % (original_name, jap_name)
 
 Jap_Generate(1)
+
+# Beacouse of lazyness I wrote code to write dict faster
+# dite = {}
+# for i in letters.upper():
+#     print "Litera", i
+#     jap_str = raw_input("wpisz: ")
+#     if jap_str == "esc":
+#         break
+#     dite[i] = jap_str
+# print dite

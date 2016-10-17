@@ -1,6 +1,9 @@
 from random import randint as RANDOM
 
 
+'''
+Generates Words it meant to be character name generator
+'''
 letters = 'abcdefghijklmnoprstuvwyz'
 len_letters = len(letters) - 1
 syllabes = ['mon', 'fay', 'shi', 'fag', 'blarg', 'rash', 'izen']
@@ -16,6 +19,7 @@ def Generate_Word(word_len=15, word=''):
     for i in range(0, word_length):
         letter_random = letters[RANDOM(0, len_letters)]
         if i == 0:
+            'First letter must be UPPER'
             word += letter_random.upper()
         if i + len(syllabe_rand) >= word_length:
             word += syllabe_rand
